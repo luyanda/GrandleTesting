@@ -1,6 +1,6 @@
 language: java
 jdk:
   - oraclejdk8
-os: linux
-group: stable
-dist: trusty
+script:
+        -javac SimpleTest.java
+        -java SimpleTest
