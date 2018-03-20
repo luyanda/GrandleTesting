@@ -26,22 +26,22 @@ public class SimpleTest {
         System.out.print("Test one");
     }
 
-    @Test( expected =ArrayIndexOutOfBoundsException.class)
+    @Test
     public void Test2(){
         person.setName("Sisa");
-        Assert.assertNull(person.getName());
+        Assert.assertNotNull(person.getName());
     }
 
-    @Test( expected =ArrayIndexOutOfBoundsException.class)
+    @Test
     public void Test3(){
         school.setSchoolName("Nongeke");
-        Assert.assertNull(school.getSchoolName());
+        Assert.assertNotNull(school.getSchoolName());
     }
 
     @Test
     public void Test4(){
         person.setName("Sisa");
         school.setSchoolName("NMU");
-        Assert.assertSame(person.getName(),school.getSchoolName());
+        Assert.assertNotSame(person.getName(),school.getSchoolName());
     }
 }
