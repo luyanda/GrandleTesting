@@ -1,6 +1,4 @@
 language: java
 jdk:
   - oraclejdk8
-script: 
-	- javac SimpleTest.java
-	- java SimpleTest
+script: java SimpleTest
