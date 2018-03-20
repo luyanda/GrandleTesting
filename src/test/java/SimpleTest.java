@@ -1,11 +1,9 @@
 package test.java;
 
-import main.java.Person;
-import main.java.School;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+
+import org.junit.*;
+import org.junit.Ignore;
+import  static org.junit.Assert.*;
 
 public class SimpleTest {
     Person person;
