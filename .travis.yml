@@ -1,6 +1,8 @@
 language: java
 jdk:
   - oraclejdk8
+  install: true
+script: ./mvnw clean install
 script: 
 	- javac -cp junit4-4.12.jar:. SimpleTestSuite.java
 	- java -cp .:junit4-4.12.jar:hamcrest-all-1.1.jar org.junit.runner.JUnitCore src/test/SimpleTestSuite
