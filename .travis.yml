@@ -1,6 +1,6 @@
+sudo: false
 language: java
 jdk:
   - oraclejdk8
   install: true
-script: ./mvnw clean install
 script: java SimpleTestSuite.java
